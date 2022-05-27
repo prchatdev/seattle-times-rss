@@ -14,6 +14,7 @@ class SeattleTimesRSSParser
   end
 
   def start
+    # Adding a comment
     @rss = RSS::Maker.make("2.0") do |maker|
       open'https://www.seattletimes.com/feed/' do |rss|
         feed = RSS::Parser.parse(rss)
