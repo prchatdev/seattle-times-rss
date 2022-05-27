@@ -7,6 +7,7 @@ require 'uri'
 require 'dotenv'
 Dotenv.load
 
+# Sad
 class SeattleTimesRSSParser
   def initialize
     @excluded_categories = Set.new(['Sponsored', 'Explore', 'Diversions'])
