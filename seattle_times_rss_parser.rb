@@ -8,6 +8,7 @@ require 'dotenv'
 Dotenv.load
 
 class SeattleTimesRSSParser
+  # Adding another fake comment
   def initialize
     @excluded_categories = Set.new(['Sponsored', 'Explore', 'Diversions'])
     @included_sources = Set.new(['wordpress'])
